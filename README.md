@@ -1,10 +1,10 @@
-# NXRADAR CycloneDX Property Taxonomy
+# QVoyant CycloneDX Property Taxonomy
 
-This document defines the official property namespace taxonomy for **`nxradar`**, maintained by
-[CyberNX Technologies Pvt. Ltd.](https://www.cybernx.com), the makers of **NXRadar** — an SBOM
+This document defines the official property namespace taxonomy for **`qvoyant`**, maintained by
+[CyberNX Technologies Pvt. Ltd.](https://www.cybernx.com), the makers of **QVoyant** — an SBOM
 management and compliance platform.
 
-The `nxradar` namespace is registered in the
+The `qvoyant` namespace is registered in the
 [CycloneDX Property Taxonomy](https://github.com/CycloneDX/cyclonedx-property-taxonomy).
 
 ---
@@ -30,7 +30,7 @@ those CERT-In-prescribed fields that are **not natively supported** by CycloneDX
 
 ## Namespace Rules
 
-- All properties in this namespace use the prefix `nxradar:`.
+- All properties in this namespace use the prefix `qvoyant:`.
 - Property names are lowercase, using underscores as word separators.
 - All properties are **optional** at the schema level but may be **required** by applicable
   regulatory frameworks (see CERT-In guidelines Section 7.1.4).
@@ -42,7 +42,7 @@ those CERT-In-prescribed fields that are **not natively supported** by CycloneDX
 
 ## Property Definitions
 
-### 1. `nxradar:criticality`
+### 1. `qvoyant:criticality`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -68,12 +68,12 @@ based on how the component is deployed in their environment.
 
 **Example:**
 ```json
-{ "name": "nxradar:criticality", "value": "high" }
+{ "name": "qvoyant:criticality", "value": "high" }
 ```
 
 ---
 
-### 2. `nxradar:usage_restrictions`
+### 2. `qvoyant:usage_restrictions`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -92,15 +92,15 @@ or determinable.
 
 **Examples:**
 ```json
-{ "name": "nxradar:usage_restrictions", "value": "Export controlled - EAR99" }
-{ "name": "nxradar:usage_restrictions", "value": "Licensed for internal use only; redistribution prohibited" }
-{ "name": "nxradar:usage_restrictions", "value": "None" }
-{ "name": "nxradar:usage_restrictions", "value": "NOT-AVAILABLE" }
+{ "name": "qvoyant:usage_restrictions", "value": "Export controlled - EAR99" }
+{ "name": "qvoyant:usage_restrictions", "value": "Licensed for internal use only; redistribution prohibited" }
+{ "name": "qvoyant:usage_restrictions", "value": "None" }
+{ "name": "qvoyant:usage_restrictions", "value": "NOT-AVAILABLE" }
 ```
 
 ---
 
-### 3. `nxradar:eol_date`
+### 3. `qvoyant:eol_date`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -119,13 +119,13 @@ not published or determinable from any source.
 
 **Examples:**
 ```json
-{ "name": "nxradar:eol_date", "value": "2026-12-31" }
-{ "name": "nxradar:eol_date", "value": "NOT-AVAILABLE" }
+{ "name": "qvoyant:eol_date", "value": "2026-12-31" }
+{ "name": "qvoyant:eol_date", "value": "NOT-AVAILABLE" }
 ```
 
 ---
 
-### 4. `nxradar:release_date`
+### 4. `qvoyant:release_date`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -144,13 +144,13 @@ not published or determinable.
 
 **Examples:**
 ```json
-{ "name": "nxradar:release_date", "value": "2022-01-10" }
-{ "name": "nxradar:release_date", "value": "NOT-AVAILABLE" }
+{ "name": "qvoyant:release_date", "value": "2022-01-10" }
+{ "name": "qvoyant:release_date", "value": "NOT-AVAILABLE" }
 ```
 
 ---
 
-### 5. `nxradar:patch_status`
+### 5. `qvoyant:patch_status`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -177,12 +177,12 @@ status that should be updated whenever the component's patch posture changes.
 
 **Example:**
 ```json
-{ "name": "nxradar:patch_status", "value": "up-to-date" }
+{ "name": "qvoyant:patch_status", "value": "up-to-date" }
 ```
 
 ---
 
-### 6. `nxradar:comments`
+### 6. `qvoyant:comments`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -201,14 +201,14 @@ from `description`, which describes what the component does.
 
 **Examples:**
 ```json
-{ "name": "nxradar:comments", "value": "Component used only in non-production environments" }
-{ "name": "nxradar:comments", "value": "Pending replacement with internal implementation in Q3 2026" }
-{ "name": "nxradar:comments", "value": "NOT-AVAILABLE" }
+{ "name": "qvoyant:comments", "value": "Component used only in non-production environments" }
+{ "name": "qvoyant:comments", "value": "Pending replacement with internal implementation in Q3 2026" }
+{ "name": "qvoyant:comments", "value": "NOT-AVAILABLE" }
 ```
 
 ---
 
-### 7. `nxradar:executable_property`
+### 7. `qvoyant:executable_property`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -232,12 +232,12 @@ can be directly executed by an operating system or runtime environment. This inc
 
 **Example:**
 ```json
-{ "name": "nxradar:executable_property", "value": "true" }
+{ "name": "qvoyant:executable_property", "value": "true" }
 ```
 
 ---
 
-### 8. `nxradar:archive_property`
+### 8. `qvoyant:archive_property`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -260,12 +260,12 @@ format, such as `.zip`, `.tar`, `.gz`, `.jar`, `.war`, `.ear`, or similar.
 
 **Example:**
 ```json
-{ "name": "nxradar:archive_property", "value": "true" }
+{ "name": "qvoyant:archive_property", "value": "true" }
 ```
 
 ---
 
-### 9. `nxradar:structured_property`
+### 9. `qvoyant:structured_property`
 
 | Attribute     | Value |
 |---------------|-------|
@@ -290,14 +290,14 @@ validation or structured parsing.
 
 **Example:**
 ```json
-{ "name": "nxradar:structured_property", "value": "true" }
+{ "name": "qvoyant:structured_property", "value": "true" }
 ```
 
 ---
 
 ## Complete CycloneDX JSON Example
 
-The following illustrates all nine `nxradar` properties applied to a single component in a
+The following illustrates all nine `qvoyant` properties applied to a single component in a
 CycloneDX SBOM:
 
 ```json
@@ -311,15 +311,15 @@ CycloneDX SBOM:
     { "alg": "SHA-256", "content": "7f87a8b8ed5c23546789b8d7586219a1..." }
   ],
   "properties": [
-    { "name": "nxradar:criticality",         "value": "high" },
-    { "name": "nxradar:usage_restrictions",  "value": "None" },
-    { "name": "nxradar:eol_date",            "value": "2025-03-22" },
-    { "name": "nxradar:release_date",        "value": "2021-01-07" },
-    { "name": "nxradar:patch_status",        "value": "up-to-date" },
-    { "name": "nxradar:comments",            "value": "Web server for all production deployments" },
-    { "name": "nxradar:executable_property", "value": "true" },
-    { "name": "nxradar:archive_property",    "value": "false" },
-    { "name": "nxradar:structured_property", "value": "true" }
+    { "name": "qvoyant:criticality",         "value": "high" },
+    { "name": "qvoyant:usage_restrictions",  "value": "None" },
+    { "name": "qvoyant:eol_date",            "value": "2025-03-22" },
+    { "name": "qvoyant:release_date",        "value": "2021-01-07" },
+    { "name": "qvoyant:patch_status",        "value": "up-to-date" },
+    { "name": "qvoyant:comments",            "value": "Web server for all production deployments" },
+    { "name": "qvoyant:executable_property", "value": "true" },
+    { "name": "qvoyant:archive_property",    "value": "false" },
+    { "name": "qvoyant:structured_property", "value": "true" }
   ]
 }
 ```
@@ -328,7 +328,7 @@ CycloneDX SBOM:
 
 ## CERT-In Field Coverage Summary
 
-| CERT-In Field (Section 4.2) | CycloneDX Native Field | nxradar Property |
+| CERT-In Field (Section 4.2) | CycloneDX Native Field | qvoyant Property |
 |-----------------------------|------------------------|------------------|
 | 1. Component Name | `name` | — |
 | 2. Component Version | `version` | — |
@@ -338,18 +338,18 @@ CycloneDX SBOM:
 | 6. Component Origin | `purl`, `externalReferences` | — |
 | 7. Component Dependencies | `dependencies` | — |
 | 8. Vulnerabilities | `vulnerabilities` (VEX) | — |
-| 9. Patch Status | — | `nxradar:patch_status` |
-| 10. Release Date | — | `nxradar:release_date` |
-| 11. End-of-Life (EOL) Date | — | `nxradar:eol_date` |
-| 12. Criticality | — | `nxradar:criticality` |
-| 13. Usage Restrictions | — | `nxradar:usage_restrictions` |
+| 9. Patch Status | — | `qvoyant:patch_status` |
+| 10. Release Date | — | `qvoyant:release_date` |
+| 11. End-of-Life (EOL) Date | — | `qvoyant:eol_date` |
+| 12. Criticality | — | `qvoyant:criticality` |
+| 13. Usage Restrictions | — | `qvoyant:usage_restrictions` |
 | 14. Checksums or Hashes | `hashes` | — |
-| 15. Comments or Notes | — | `nxradar:comments` |
+| 15. Comments or Notes | — | `qvoyant:comments` |
 | 16. Author of SBOM Data | `metadata.authors` | — |
 | 17. Timestamp | `metadata.timestamp` | — |
-| 18. Executable Property | — | `nxradar:executable_property` |
-| 19. Archive Property | — | `nxradar:archive_property` |
-| 20. Structured Property | — | `nxradar:structured_property` |
+| 18. Executable Property | — | `qvoyant:executable_property` |
+| 19. Archive Property | — | `qvoyant:archive_property` |
+| 20. Structured Property | — | `qvoyant:structured_property` |
 | 21. Unique Identifier | `purl`, `cpe`, `bom-ref` | — |
 
 ---
@@ -358,7 +358,7 @@ CycloneDX SBOM:
 
 This taxonomy is maintained by CyberNX Technologies Pvt. Ltd.  
 For questions, corrections, or additions, open an issue at:  
-**https://github.com/orgs/cybernxtech/cyclonedx-property-taxonomy/issues**
+**[https://github.com/cybernxtech/cyclonedx-property-taxonomy/issues](https://github.com/cybernxtech/cyclonedx-property-taxonomy/issues)**
 
 | Version | Date | Changes |
 |---------|------|---------|
